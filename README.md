@@ -26,10 +26,10 @@ This tool requires .Net Framework `4.5.2` or above.
 - For example, if your export folder is ```C:\Export```, share the drive with share name ```C``` and use the following export path instead: ```\\localhost\C\Export```.
 
 # Author
-- Loc Nguyen.
+- Aaqib Wiki
 
 # Version
-- This current version is `1.1.0.0`.
+- This current version is `1.1.0.1`.
 
 # Refference
 - This tool has been made by myself but some functions about running commandline tools or style of code that I refer from [Lynda-Decryptor](https://github.com/h4ck-rOOt/Lynda-Decryptor).
