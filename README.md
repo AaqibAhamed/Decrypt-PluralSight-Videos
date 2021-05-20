@@ -4,11 +4,15 @@ This tool is made to decrypt the videos (.psv), decrypt module folder names, rea
 
 Based on: https://github.com/vinhloc1996/DecryptPluralSightVideos
 
-In This Version:
+# Change log:
+* Version 1.9.1
+    + Fix Module and clip index wrong format.
+
+# In This Version:
 + Fix video can't play with POP version 1.0.291
 + Switch to use the original file. If in the future, POP change the Encrypt Algorithm, you can replace the `Pluralsight.Domain.dll` existing in this program with the latest file from POP, and maybe it works without any fixing
 
-Added Feature:
+# Added Feature:
 + Add GUI
 + Auto detected default Pluralsight Path
 + List all Course downloaded (except unfinished download)
@@ -39,13 +43,14 @@ Added Feature:
    + You can delete all courses by select all courses, check the `Delete` checkbox only, and press `Run`.
    + Some courses don't have subtitles, so the subtitle file will not be generated.
    + You can watch video guide [here](https://youtu.be/mPytcMQY9Ck)
+
 # Author
 - Loc Nguyen.
 - Hieu Phan
 - sitiom
 
 # Version
-- This current version is `1.9.0.0`.
+- This current version is `1.9.1.0`.
 
 # Reference
 - This tool has been made by myself but some functions about running command-line tools or style of code that I refer from [Lynda-Decryptor](https://github.com/h4ck-rOOt/Lynda-Decryptor).
