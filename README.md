@@ -5,6 +5,9 @@ This tool is made to decrypt the videos (.psv), decrypt module folder names, rea
 Based on: https://github.com/vinhloc1996/DecryptPluralSightVideos
 
 # Change log:
+* Version 1.9.2
+    + Fix can't get courses list when change the courses path/DB path by copy & paste.
+
 * Version 1.9.1
     + Fix Module and clip index wrong format.
 
@@ -50,7 +53,7 @@ Based on: https://github.com/vinhloc1996/DecryptPluralSightVideos
 - sitiom
 
 # Version
-- This current version is `1.9.1.0`.
+- This current version is `1.9.2.0`.
 
 # Reference
 - This tool has been made by myself but some functions about running command-line tools or style of code that I refer from [Lynda-Decryptor](https://github.com/h4ck-rOOt/Lynda-Decryptor).
