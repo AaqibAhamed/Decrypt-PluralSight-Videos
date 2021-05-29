@@ -48,9 +48,7 @@ Based on: https://github.com/vinhloc1996/DecryptPluralSightVideos
    + You can watch video guide [here](https://youtu.be/mPytcMQY9Ck)
 
 # Author
-- Loc Nguyen.
-- Hieu Phan
-- sitiom
+- Aaqib Wiki
 
 # Version
 - This current version is `1.9.2.0`.
