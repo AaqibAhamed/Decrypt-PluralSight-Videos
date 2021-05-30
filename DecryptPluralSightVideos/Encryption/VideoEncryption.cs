@@ -1,4 +1,4 @@
-namespace DecryptPluralSightVideos.Encryption
+﻿namespace DecryptPluralSightVideos.Encryption
 {
     public class VideoEncryption
     {
