@@ -1,12 +1,30 @@
-# Decrypt PluralSight Videos[![Build Status](https://travis-ci.org/vinhloc1996/DecryptPluralSightVideos.svg?branch=master)](https://travis-ci.org/vinhloc1996/DecryptPluralSightVideos)
-When you donwload a video to watch offline through plural sight app, the video was encrypted and can only be watched by their app. This tool has been made to decrypt the videos, it will decrypt the video, rearrange the course folder name, decrypt module folder name, and for all, decrypt video of plural sight (.psv).
+# DISCLAIMER
+I am not the original programmer for this project. All software is provided as is. This is a fork from other users. I am only interest in understanding the coding logic.
 
-# Getting Started
-This tool requires .Net Framework `4.5.2` or above.
+# Latest Update
+The original software is no longer working as Pluralsight has changed the encryption algo. I read the code and also dotpeek the latest version of PluralSight offline video to see what has changed. The whole different is only 1 file VideoEncryption.cs and 1 line of code in that called XorBuffer
+
+# Software Logic
+All courses related info are stored in a sqlite database (pluralsight.db). It has the following tables.
+* Analytics
+* Clips
+* ClipTranscript
+* ClipView
+* Course
+* CourseAccess
+* CourseProgress
+* Module
+* Settings
+* User
+* UserProfile
+* Version
+
+The important files are the PsStream.cs VideoEncryption.cs and the VirtualFileCache.cs. Study those if you are interested in learning. Well at least I learnt it.
+
+The recent change of Encryption algo is in VideoEncryption.cs
 
 ## Installing
-* Download the latest binary from [here](https://github.com/vinhloc1996/DecryptPluralSightVideos/releases/download/1.0.0.0/DecryptPluralSightVideos_v1.0.zip).
-* Extract the zip file, open commandline and navigate to extracted folder containing DecryptPluralSightVideos.exe.
+* I have not intention of releasing binary file. Dont wanna hurt other people's intellectual property. THIS IS ONLY FOR EDUCATIONAL PURPOSE.
 * For more information about flags using on this tool, execute this command in the commandline ``DecryptPluralSightVideos /HELP``.
 1. Note: All the flag in this tool is ``case-insensitive``.
 2. Note: Usually the Pluralsight app will put the downloaded courses in the path:
@@ -25,11 +43,3 @@ This tool requires .Net Framework `4.5.2` or above.
 1. In case you experience a "Path too long" exception, try to use an UNC path for export. You can share your local hard drive and connect to it using an UNC path. This way, Windows will use its Unicode API and in turn support path lengths with to 32k characters.
 - For example, if your export folder is ```C:\Export```, share the drive with share name ```C``` and use the following export path instead: ```\\localhost\C\Export```.
 
-# Author
-- Aaqib Wiki
-
-# Version
-- This current version is `1.1.0.1`.
-
-# Refference
-- This tool has been made by myself but some functions about running commandline tools or style of code that I refer from [Lynda-Decryptor](https://github.com/h4ck-rOOt/Lynda-Decryptor).
